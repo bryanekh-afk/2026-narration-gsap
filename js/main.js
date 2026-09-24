@@ -22,8 +22,6 @@ gsap.from("#vaisseau", {
     duration: 2,
 })
 
-
-
 /* Animation deuxieme bloc ------*/
 
 gsap.from("#movingBlock2", {
