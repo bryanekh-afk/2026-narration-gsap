@@ -29,7 +29,7 @@ gsap.from("#movingBlock2", {
         trigger: "#section2",
         start: 'top 50%',
         end: 'top 10%',
-        markers: true, 
+        markers: false, 
         id: 'Section2',
         scrub: 1,
         toggleActions: 'play none reverse reset' 
@@ -37,8 +37,28 @@ gsap.from("#movingBlock2", {
     y: '50vh',
     rotation: 1200,
     duration: 5,
+    
 });
 
+/* Animation des 3 images draggable (à ajouter sous ton animation ScrollTrigger) */
+Draggable.create(".mes-images-drag", {
+    type: "x,y", 
+    bounds: "#section2", /* Elles ne sortiront pas de la section 2 */
+    dragResistance: -1,
+    inertia: true,
+    cursor: "grab",
+    onClick: function(){
+        console.log('Je clic');
+    },
+    onDrag: function(){
+        console.log('Je déplace');
+    },
+    onDragEnd: function(){
+        console.log('Je dépose');
+    }
+});
+gsap.set("#drag1", { rotation: -20 });
+gsap.set("#drag2", { rotation: 15 });
 /* Animation troisieme bloc ------*/
 
 let tl = gsap.timeline({

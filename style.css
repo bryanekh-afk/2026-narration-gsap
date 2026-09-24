@@ -16,7 +16,7 @@
 /* design de la page--------*/
 #RMsection1{
     min-height: 100vh;
-    background-image: url('assets/images/fond.jpg');
+    background-image: url('assets/images/fond3.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +24,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* 1. Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* 2. Application de la typographie sur ton H1 */
+    font-family: 'Creepster', cursive;
+    color: #39ff14; /* Vert néon style portail */
+    font-size: 4rem; /* Taille du texte */
+    text-shadow: 2px 2px 0px #000; /* Optionnel : ombre portée pour le style */
+    /* Effet de contour noir prononcé + lueur verte */
+    text-shadow: 3px 3px 0px #000, -3px -3px 0px #000, 3px -3px 0px #000, -3px 3px 0px #000, 0 0 20px rgba(57, 255, 20, 0.8);
+    margin: 0;
+    text-align: center;
+
+}
+
+/* Le petit texte encadré en dessous */
+.sous-titre {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    border: 2px solid #39ff14; /* Bordure verte */
+    border-radius: 20px; /* Bords arrondis */
+    padding: 5px 20px;
+    font-size: 1.2rem;
+    display: inline-block; /* Permet à l'encadré de s'adapter à la taille du texte */
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 #vaisseau{
@@ -40,7 +67,7 @@
 
 .bg-dark{
     min-height: 100vh;
-    background-image: url('assets/images/fond.jpg');
+    background-image: url('assets/images/fond2.jpg');
     background-size: cover;
     background-position: center; 
     background-repeat: no-repeat; 
@@ -50,7 +77,7 @@
 }
 .bg-light {
     min-height: 100vh;
-    background-image: url('assets/images/fond.jpg');
+    background-image: url('assets/images/fondvortex.jpg');
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat;
@@ -67,4 +94,59 @@
  .image-block {
     width: 600px; 
     
+}
+
+/* Rend la section solide pour que les éléments se positionnent bien par rapport à elle */
+#section2 {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* On force la hauteur pour débloquer le positionnement */
+}
+
+/* Style commun pour les 3 images */
+.mes-images-drag {
+    position: absolute;
+    width: 120px;
+    height: auto;
+    z-index: 10;
+    cursor: grab;
+    margin: 0; /* Empêche le centrage automatique de s'emmêler les pinceaux */
+}
+
+/* Placement exact avec vh et vw (100% increvable) */
+#drag1 { 
+    top: 15vh; 
+    left: 10vw; 
+     width: 400px
+}
+
+#drag2 { 
+    bottom: 15vh; 
+    left: 10vw; 
+     width: 400px
+}
+
+#drag3 { 
+    bottom: 15vh; 
+    right: 10vw; 
+    width: 316px; /* Plus large pour les têtes de monstres */
+}
+#drag {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    /* 1. Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+/* 2. Application de la typographie sur ton H1 */
+    font-family: 'Creepster', cursive;
+    color: #39ff14; /* Vert néon style portail */
+    font-size: 4rem; /* Taille du texte */
+    text-shadow: 2px 2px 0px #000; /* Optionnel : ombre portée pour le style */
+    /* Effet de contour noir prononcé + lueur verte */
+    text-shadow: 3px 3px 0px #000, -3px -3px 0px #000, 3px -3px 0px #000, -3px 3px 0px #000, 0 0 20px rgba(57, 255, 20, 0.8);
+    margin: 0;
+    text-align: center;
 }
