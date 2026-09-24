@@ -1,0 +1,70 @@
+/* Base ----------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Variables */
+
+
+
+/* Typogrphies ----*/
+
+
+
+/* design de la page--------*/
+#RMsection1{
+    min-height: 100vh;
+    background-image: url('assets/images/fond.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#vaisseau{
+    width: 600px;
+}
+
+.h100{
+    min-height: 100vh;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-dark{
+    min-height: 100vh;
+    background-image: url('assets/images/fond.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bg-light {
+    min-height: 100vh;
+    background-image: url('assets/images/fond.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-block {
+    width: 300px; /* Tu peux modifier cette valeur pour changer la taille du vaisseau */
+    height: auto;
+}
+
+ .image-block {
+    width: 600px; 
+    
+}
